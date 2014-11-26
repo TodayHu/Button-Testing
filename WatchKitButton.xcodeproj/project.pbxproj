@@ -21,6 +21,7 @@
 		D528D8A61A265F3000CA3120 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D528D8A51A265F3000CA3120 /* Interface.storyboard */; };
 		D528D8A81A265F3000CA3120 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D528D8A71A265F3000CA3120 /* Images.xcassets */; };
 		D528D8AB1A265F3000CA3120 /* WatchKitButton WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D528D8901A265F2F00CA3120 /* WatchKitButton WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5E63C951A26699300D81488 /* SecondFace.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E63C941A26699300D81488 /* SecondFace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		D528D8A41A265F3000CA3120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D528D8A51A265F3000CA3120 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		D528D8A71A265F3000CA3120 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5E63C931A26699300D81488 /* SecondFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondFace.h; sourceTree = "<group>"; };
+		D5E63C941A26699300D81488 /* SecondFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondFace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 			children = (
 				D528D8971A265F2F00CA3120 /* InterfaceController.h */,
 				D528D8981A265F2F00CA3120 /* InterfaceController.m */,
+				D5E63C931A26699300D81488 /* SecondFace.h */,
+				D5E63C941A26699300D81488 /* SecondFace.m */,
 				D528D89A1A265F2F00CA3120 /* Images.xcassets */,
 				D528D8951A265F2F00CA3120 /* Supporting Files */,
 			);
@@ -400,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E63C951A26699300D81488 /* SecondFace.m in Sources */,
 				D528D8991A265F2F00CA3120 /* InterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +655,7 @@
 				D528D8881A265F1500CA3120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D528D8891A265F1500CA3120 /* Build configuration list for PBXNativeTarget "WatchKitButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +664,7 @@
 				D528D88B1A265F1500CA3120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D528D8AC1A265F3000CA3120 /* Build configuration list for PBXNativeTarget "WatchKitButton Watch App" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +673,7 @@
 				D528D8AE1A265F3000CA3120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D528D8AF1A265F3000CA3120 /* Build configuration list for PBXNativeTarget "WatchKitButton WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +682,7 @@
 				D528D8B11A265F3000CA3120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

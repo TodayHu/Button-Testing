@@ -1,24 +1,22 @@
 //
-//  InterfaceController.m
-//  WatchKitButton WatchKit Extension
+//  SecondFace.m
+//  WatchKitButton
 //
 //  Created by New on 11/26/14.
 //
 //
 
-#import "InterfaceController.h"
+#import "SecondFace.h"
 
+@interface SecondFace()
 
-@interface InterfaceController()
-
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel * label;
-@property (weak, nonatomic) IBOutlet WKInterfaceButton * button;
-@property (nonatomic) int counter;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel * secondLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton * secondButton;
+@property (nonatomic) int secondCounter;
 
 @end
 
-
-@implementation InterfaceController
+@implementation SecondFace
 
 - (instancetype)initWithContext:(id)context {
     self = [super initWithContext:context];
@@ -33,24 +31,24 @@
 
 - (IBAction)changeColor:(id)sender
 {
-    if (_counter == 0)
+    if (_secondCounter == 0)
     {
-        [self.label setTextColor:[UIColor purpleColor]];
-        [self.label setText:@"!!YES!!"];
-        ++_counter;
+        [self.secondLabel setTextColor:[UIColor purpleColor]];
+        [self.secondLabel setText:@"!!HELL NO!!"];
+        ++_secondCounter;
     }
     else
     {
-        [self.label setTextColor:[UIColor whiteColor]];
-        [self.label setText:@"Am I Mad?"];
-        --_counter;
+        [self.secondLabel setTextColor:[UIColor whiteColor]];
+        [self.secondLabel setText:@"Am I Happy?"];
+        --_secondCounter;
     }
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     NSLog(@"%@ will activate", self);
-    _counter = 0;
+    _secondCounter = 0;
 }
 
 - (void)didDeactivate {
@@ -58,7 +56,5 @@
     NSLog(@"%@ did deactivate", self);
 }
 
+
 @end
-
-
-

@@ -12,17 +12,43 @@
                     <items>
                         <label alignment="center" text="Am I Mad?" id="kfb-jv-SkB"/>
                         <button width="1" alignment="center" verticalAlignment="center" title="Press ME!" id="GnT-6A-QiL">
+                            <color key="backgroundColor" red="0.20654199602368051" green="0.32347124953006434" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="changeColor:" destination="AgC-eL-Hgc" id="DfH-uu-ubb"/>
                             </connections>
                         </button>
                     </items>
+                    <color key="backgroundColor" red="1" green="0.11451682246660067" blue="0.1199509696191462" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="button" destination="GnT-6A-QiL" id="0cI-TU-4AM"/>
                         <outlet property="label" destination="kfb-jv-SkB" id="BbP-Vo-mys"/>
+                        <segue destination="lg7-H3-8dQ" kind="relationship" relationship="nextPage" id="hpd-2D-AJB"/>
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--Second Face-->
+        <scene sceneID="kTT-SX-ikn">
+            <objects>
+                <controller id="lg7-H3-8dQ" customClass="SecondFace">
+                    <items>
+                        <label alignment="center" text="Am I Happy?" id="MiH-Nj-Xac"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Find OUT!" id="lSE-X2-0sp">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.1145168225" blue="0.1199509696" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="changeColor:" destination="lg7-H3-8dQ" id="8ZP-UQ-TFZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.20654199600000001" green="0.3234712495" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="secondButton" destination="lSE-X2-0sp" id="6BC-5v-lUo"/>
+                        <outlet property="secondLabel" destination="MiH-Nj-Xac" id="6pn-DK-Q8e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="339" y="136"/>
         </scene>
     </scenes>
 </document>
