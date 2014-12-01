@@ -26,13 +26,15 @@
         // Initialize variables here.
         // Configure interface objects here.
         NSLog(@"%@ initWithContext", self);
-        
     }
     return self;
 }
 
+// single button on watch face
 - (IBAction)changeColor:(id)sender
 {
+    // change text and color of label, depending on what state the label is in
+    // maybe use mod instead to keep track?
     if (_counter == 0)
     {
         [self.label setTextColor:[UIColor purpleColor]];
@@ -49,6 +51,8 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    
+    // initialize the counter, so nothing weird happens
     NSLog(@"%@ will activate", self);
     _counter = 0;
 }

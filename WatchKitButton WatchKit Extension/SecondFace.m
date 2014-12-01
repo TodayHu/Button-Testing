@@ -10,6 +10,8 @@
 
 @interface SecondFace()
 
+// connected to main interface in storyboard
+// swipe screen to change, no button needed
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel * secondLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton * secondButton;
 @property (nonatomic) int secondCounter;
@@ -29,8 +31,11 @@
     return self;
 }
 
+// single button on watch face
 - (IBAction)changeColor:(id)sender
 {
+    // change text and color of label, depending on what state the label is in
+    // maybe use mod instead to keep track?
     if (_secondCounter == 0)
     {
         [self.secondLabel setTextColor:[UIColor purpleColor]];
@@ -48,6 +53,8 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     NSLog(@"%@ will activate", self);
+    
+    // initialize the counter, so nothing weird happens
     _secondCounter = 0;
 }
 
